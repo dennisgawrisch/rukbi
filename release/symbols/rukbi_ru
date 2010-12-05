@@ -1,0 +1,126 @@
+// Rukbi Russian (Cyrillic) Layout
+// http://besisland.name/rukbi/
+// Copyright © 2008, 2009 bes island <besisland@besisland.name>
+//
+// Ilya Birman’s typographical layout
+// http://ilyabirman.ru/typography-layout/
+// Copyright © 2006—2009 Ilya Birman <ilyabirman@ilyabirman.ru>
+//
+// Rukbi is free software: you can redistribute it and/or modify
+// it under the terms of the GNU General Public License as published by
+// the Free Software Foundation, either version 3 of the License, or
+// (at your option) any later version.
+//
+// Rukbi is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU General Public License for more details.
+//
+// You should have received a copy of the GNU General Public License
+// along with this program.  If not, see http://www.gnu.org/licenses/.
+
+partial default alphanumeric_keys
+xkb_symbols "rukbi" {
+    name[Group1]="Rukbi (Russian with Ukrainian letters)";
+    key <TLDE> {[   U0451   ,   U0401   ,   U03E7   ,   U03E6   ]};
+    key <AE01> {[   U0031   ,   U0021   ,   U00B9   ,   U203D   ]};
+    key <AE02> {[   U0032   ,   U0022   ,   U00B2   ,   U00BD   ]};
+    key <AE03> {[   U0033   ,   U2116   ,   U00B3   ,   U2153   ]};
+    key <AE04> {[   U0034   ,   U003B   ,   U20B4   ,   U00BC   ]};
+    key <AE05> {[   U0035   ,   U0025   ,   U2030   ,   U2030   ]};
+    key <AE06> {[   U0036   ,   U003A   ,   U2191   ,   U0302   ]};
+    key <AE07> {[   U0037   ,   U003F   ,   U2048   ,   U2049   ]};
+    key <AE08> {[   U0038   ,   U002A   ,   U221E   ,   U221E   ]};
+    key <AE09> {[   U0039   ,   U0028   ,   U2190   ,   U2190   ]};
+    key <AE10> {[   U0030   ,   U0029   ,   U2192   ,   U2192   ]};
+    key <AE11> {[   U002D   ,   U005F   ,   U2014   ,   U2013   ]};
+    key <AE12> {[   U003D   ,   U002B   ,   U2260   ,   U00B1   ]};
+    key <AD01> {[   U0439   ,   U0419   ,   U0439   ,   U0306   ]};
+    key <AD02> {[   U0446   ,   U0426   ,   U0446   ,   U0446   ]};
+    key <AD03> {[   U0443   ,   U0423   ,   U045E   ,   U040E   ]};
+    key <AD04> {[   U043A   ,   U041A   ,   U00AE   ,   U00AE   ]};
+    key <AD05> {[   U0435   ,   U0415   ,   U2122   ,   U2122   ]};
+    key <AD06> {[   U043D   ,   U041D   ,   U0024   ,   U20AC   ]};
+    key <AD07> {[   U0433   ,   U0413   ,   U0491   ,   U0490   ]};
+    key <AD08> {[   U0448   ,   U0428   ,   U00E6   ,   U00C6   ]};
+    key <AD09> {[   U0449   ,   U0429   ,   U0153   ,   U0152   ]};
+    key <AD10> {[   U0437   ,   U0417   ,   U0027   ,   U0022   ]};
+    key <AD11> {[   U0445   ,   U0425   ,   U0445   ,   U0445   ]};
+    key <AD12> {[   U044A   ,   U042A   ,   U0457   ,   U0407   ]};
+    key <BKSL> {[   U005C   ,   U002F   ,   U005C   ,   U0300   ]};
+    key <AC01> {[   U0444   ,   U0424   ,   U2248   ,   U00A7   ]};
+    key <AC02> {[   U044B   ,   U042B   ,   U0456   ,   U0406   ]};
+    key <AC03> {[   U0432   ,   U0412   ,   U00B0   ,   U2103   ]};
+    key <AC04> {[   U0430   ,   U0410   ,   U00A3   ,   U2109   ]};
+    key <AC05> {[   U043F   ,   U041F   ,   U043F   ,   U043F   ]};
+    key <AC06> {[   U0440   ,   U0420   ,   U0440   ,   U0440   ]};
+    key <AC07> {[   U043E   ,   U041E   ,   U201E   ,   U201E   ]};
+    key <AC08> {[   U043B   ,   U041B   ,   U201C   ,   U2018   ]};
+    key <AC09> {[   U0434   ,   U0414   ,   U201D   ,   U2019   ]};
+    key <AC10> {[   U0436   ,   U0416   ,   U0436   ,   U0308   ]};
+    key <AC11> {[   U044D   ,   U042D   ,   U0454   ,   U0404   ]};
+    key <AB01> {[   U044F   ,   U042F   ,   U044F   ,   U044F   ]};
+    key <AB02> {[   U0447   ,   U0427   ,   U00D7   ,   U22C5   ]};
+    key <AB03> {[   U0441   ,   U0421   ,   U00A9   ,   U00A2   ]};
+    key <AB04> {[   U043C   ,   U041C   ,   U2193   ,   U030C   ]};
+    key <AB05> {[   U0438   ,   U0418   ,   U0438   ,   U0438   ]};
+    key <AB06> {[   U0442   ,   U0422   ,   U0442   ,   U0303   ]};
+    key <AB07> {[   U044C   ,   U042C   ,   U2212   ,   U2212   ]};
+    key <AB08> {[   U0431   ,   U0411   ,   U00AB   ,   U201E   ]};
+    key <AB09> {[   U044E   ,   U042E   ,   U00BB   ,   U201C   ]};
+    key <AB10> {[   U002E   ,   U002C   ,   U2026   ,   U0301   ]};
+    key <SPCE> {[U0020, U0020, U00A0, U00A0]};
+};
+
+partial alphanumeric_keys
+xkb_symbols "birman" {
+    name[Group1]="Ilya Birman’s Russian";
+    key <TLDE> {[   U0451   ,   U0401   ,   U00B4   ,   U0300   ]};
+    key <AE01> {[   U0031   ,   U0021   ,   U00B9   ,   U00B9   ]};
+    key <AE02> {[   U0032   ,   U0022   ,   U00B2   ,   U00BD   ]};
+    key <AE03> {[   U0033   ,   U2116   ,   U00B3   ,   U2153   ]};
+    key <AE04> {[   U0034   ,   U003B   ,   U0024   ,   U00BC   ]};
+    key <AE05> {[   U0035   ,   U0025   ,   U2030   ,   U2030   ]};
+    key <AE06> {[   U0036   ,   U003A   ,   U2191   ,   U0302   ]};
+    key <AE07> {[   U0037   ,   U003F   ,   U0037   ,   U0037   ]};
+    key <AE08> {[   U0038   ,   U002A   ,   U221E   ,   U221E   ]};
+    key <AE09> {[   U0039   ,   U0028   ,   U2190   ,   U2190   ]};
+    key <AE10> {[   U0030   ,   U0029   ,   U2192   ,   U2192   ]};
+    key <AE11> {[   U002D   ,   U005F   ,   U2014   ,   U2013   ]};
+    key <AE12> {[   U003D   ,   U002B   ,   U2260   ,   U00B1   ]};
+    key <AD01> {[   U0439   ,   U0419   ,   U0439   ,   U0306   ]};
+    key <AD02> {[   U0446   ,   U0426   ,   U0446   ,   U0446   ]};
+    key <AD03> {[   U0443   ,   U0423   ,   U20AC   ,   U20AC   ]};
+    key <AD04> {[   U043A   ,   U041A   ,   U00AE   ,   U00AE   ]};
+    key <AD05> {[   U0435   ,   U0415   ,   U2122   ,   U2122   ]};
+    key <AD06> {[   U043D   ,   U041D   ,   U0463   ,   U0462   ]};
+    key <AD07> {[   U0433   ,   U0413   ,   U0475   ,   U0474   ]};
+    key <AD08> {[   U0448   ,   U0428   ,   U0456   ,   U0406   ]};
+    key <AD09> {[   U0449   ,   U0429   ,   U0473   ,   U0472   ]};
+    key <AD10> {[   U0437   ,   U0417   ,   U0027   ,   U0022   ]};
+    key <AD11> {[   U0445   ,   U0425   ,   U005B   ,   U007B   ]};
+    key <AD12> {[   U044A   ,   U042A   ,   U005D   ,   U007D   ]};
+    key <BKSL> {[   U005C   ,   U002F   ,   U005C   ,   U005C   ]};
+    key <AC01> {[   U0444   ,   U0424   ,   U2248   ,   U2318   ]};
+    key <AC02> {[   U044B   ,   U042B   ,   U00A7   ,   U00A7   ]};
+    key <AC03> {[   U0432   ,   U0412   ,   U00B0   ,   U00B0   ]};
+    key <AC04> {[   U0430   ,   U0410   ,   U00A3   ,   U00A3   ]};
+    key <AC05> {[   U043F   ,   U041F   ,   U043F   ,   U043F   ]};
+    key <AC06> {[   U0440   ,   U0420   ,   U0440   ,   U0440   ]};
+    key <AC07> {[   U043E   ,   U041E   ,   U201E   ,   U201E   ]};
+    key <AC08> {[   U043B   ,   U041B   ,   U201C   ,   U2018   ]};
+    key <AC09> {[   U0434   ,   U0414   ,   U201D   ,   U2019   ]};
+    key <AC10> {[   U0436   ,   U0416   ,   U2018   ,   U0308   ]};
+    key <AC11> {[   U044D   ,   U042D   ,   U2019   ,   U2019   ]};
+    key <AB01> {[   U044F   ,   U042F   ,   U044F   ,   U044F   ]};
+    key <AB02> {[   U0447   ,   U0427   ,   U00D7   ,   U22C5   ]};
+    key <AB03> {[   U0441   ,   U0421   ,   U00A9   ,   U00A2   ]};
+    key <AB04> {[   U043C   ,   U041C   ,   U2193   ,   U030C   ]};
+    key <AB05> {[   U0438   ,   U0418   ,   U0438   ,   U0438   ]};
+    key <AB06> {[   U0442   ,   U0422   ,   U0442   ,   U0303   ]};
+    key <AB07> {[   U044C   ,   U042C   ,   U2212   ,   U2212   ]};
+    key <AB08> {[   U0431   ,   U0411   ,   U00AB   ,   U201E   ]};
+    key <AB09> {[   U044E   ,   U042E   ,   U00BB   ,   U201C   ]};
+    key <AB10> {[   U002E   ,   U002C   ,   U002E   ,   U0301   ]};
+    key <SPCE> {[U0020, U0020, U00A0, U00A0]};
+};

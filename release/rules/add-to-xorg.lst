@@ -1,0 +1,11 @@
+! layout
+  rukbi_ru        Rukbi Russian
+  rukbi_en        Rukbi English
+  rukbi_uk        Rukbi Ukrainian
+
+! variant
+  rukbi           rukbi_en: Rukbi English (Latin)
+  birman          rukbi_en: Ilya Birman’s English
+  rukbi           rukbi_ru: Russian with Ukrainian letters
+  birman          rukbi_ru: Ilya Birman’s Russian
+  birman          rukbi_uk: Ukrainian after Ilya Birman’s layout
