@@ -24,20 +24,25 @@ find_xkb_directory() {
 }
 
 install_symbols() {
-    # TODO
+    for layout in symbols/*; do
+        cp $layout $xkb_directory/symbols/
+    done
 }
 
 install_rules() {
     patch_list() {
+        cp $1 $1.rukbi.bak
         local tmp=/tmp/`basename $1`
         cat $1 | grep -v rukbi > $tmp
-        #TODO patch list
+        echo "TODO patch list"
         rm $tmp
     }
 
     patch_xml() {
+        cp $1 $1.rukbi.bak
         #TODO remove existing Rukbi entries from the xml
         #TODO patch xml
+        echo "TODO patch xml"
     }
 
     for list in $xkb_directory/rules/*.lst; do
