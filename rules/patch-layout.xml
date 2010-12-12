@@ -1,0 +1,70 @@
+    <layout>
+      <configItem>
+        <name>rukbi_en</name>
+        <shortDescription>Лат</shortDescription>
+        <description>Английская со специальными символами</description>
+        <languageList>
+          <iso639Id>eng</iso639Id>
+        </languageList>
+      </configItem>
+      <variantList>
+        <variant>
+          <configItem>
+            <name>rukbi</name>
+            <description>Rukbi</description>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
+            <name>birman</name>
+            <description>Ильи Бирмана</description>
+          </configItem>
+        </variant>
+      </variantList>
+    </layout>
+    <layout>
+      <configItem>
+        <name>rukbi_ru</name>
+        <shortDescription>Рус</shortDescription>
+        <description>Русская со специальными символами</description>
+        <languageList>
+          <iso639Id>rus</iso639Id>
+        </languageList>
+      </configItem>
+      <variantList>
+        <variant>
+          <configItem>
+            <name>rukbi</name>
+            <description>с дополнительными украинскими буквами</description>
+            <languageList>
+              <iso639Id>rus</iso639Id>
+              <iso639Id>ukr</iso639Id>
+            </languageList>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
+            <name>birman</name>
+            <description>Ильи Бирмана</description>
+          </configItem>
+        </variant>
+      </variantList>
+    </layout>
+    <layout>
+      <configItem>
+        <name>rukbi_uk</name>
+        <shortDescription>Укр</shortDescription>
+        <description>Украинская со специальными символами</description>
+        <languageList>
+          <iso639Id>ukr</iso639Id>
+        </languageList>
+      </configItem>
+      <variantList>
+        <variant>
+          <configItem>
+            <name>birman</name>
+            <description>по образцу раскладки Ильи Бирмана</description>
+          </configItem>
+        </variant>
+      </variantList>
+    </layout>
