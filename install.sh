@@ -5,17 +5,20 @@ is_xkb_directory() {
 }
 
 find_xkb_directory() {
-    for directory in "/usr/share/X11/xkb" "/etc/X11/xkb"; do
+    for directory in "$PWD/usr" "/usr/share/X11/xkb" "/etc/X11/xkb"; do
+        echo -n "Testing directory «$directory»… " >&2;
         if is_xkb_directory $directory; then
             echo $directory
+            echo 'yes' >&2
             return
         fi
+        echo 'no' >&2
     done
 
     local locate_query='/*/xkb/symbols'
-    if [[ `locate $locate_query | wc -l` -eq 1 ]]; then
-        local directory=`locate $locate_query`
-        local directory=`dirname $directory`
+    local located=`locate $locate_query`;
+    if [[ `echo $located | wc -l` -eq 1 ]]; then
+        local directory=`dirname $located`
         if is_xkb_directory $directory; then
             echo $directory
             return
@@ -31,11 +34,24 @@ install_symbols() {
 
 install_rules() {
     patch_list() {
-        cp $1 $1.rukbi.bak
-        local tmp=/tmp/`basename $1`
-        cat $1 | grep -v rukbi > $tmp
-        echo "TODO patch list"
-        rm $tmp
+      patch_section(){
+#         echo -n "Adding a section «$2» to a file «$1»... "
+        local line=`grep -n "\! $2" "$1"|head -n1|cut -d':' -f1`;
+#         echo "total lines count: `wc -l "$1"|cut -d' ' -f1`";
+#         echo "head lines: $line";
+        local taillines=$((`wc -l "$1"|cut -d' ' -f1`-$line));
+        head -n$line "$1" > "$1.fixed"
+        cat "rules/patch-$2.lst" >> "$1.fixed"
+        tail -n$taillines "$1" >> "$1.fixed"
+        mv "$1.fixed" "$1"
+#         echo 'done';
+      }
+      cp "$1" "$1.rukbi.bak"
+      local tmp="/tmp/`basename $1`"
+      grep -viE '(rukbi|birman)' "$1" > "$tmp"
+      patch_section "$tmp" layout
+      patch_section "$tmp" variant
+      mv "$tmp" "$1"
     }
 
     patch_xml() {
