@@ -1,6 +1,6 @@
     <layout>
       <configItem>
-        <name>́§en</name>
+        <name>́rukbi_en</name>
         <shortDescription>Лат</shortDescription>
         <description>Английская со специальными символами</description>
         <languageList>
@@ -24,7 +24,7 @@
     </layout>
     <layout>
       <configItem>
-        <name>́§ru</name>
+        <name>́rukbi_ru</name>
         <shortDescription>Рус</shortDescription>
         <description>Русская со специальными символами</description>
         <languageList>
@@ -52,7 +52,7 @@
     </layout>
     <layout>
       <configItem>
-        <name>́§uk</name>
+        <name>́rukbi_uk</name>
         <shortDescription>Укр</shortDescription>
         <description>Украинская со специальными символами</description>
         <languageList>
