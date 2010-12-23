@@ -33,10 +33,18 @@ install_symbols() {
 }
 
 install_rules() {
+#   get_line_numbers pattern filename
+# pattern is an extended regexp.
+# returns numbers array of available lines looking like the pattern,
+# returns "", if no suitable lines were found.
+  get_line_numbers(){
+    echo `egrep -n "$1" "$2"|cut -d':' -f1`
+  }
     patch_list() {
       patch_section(){
 #         echo -n "Adding a section «$2» to a file «$1»... "
-        local line=`grep -n "\! $2" "$1"|head -n1|cut -d':' -f1`;
+        local NUMBERS=($(get_line_numbers "! $2" "$1"))
+        local line=${NUMBERS[0]};
 #         echo "total lines count: `wc -l "$1"|cut -d' ' -f1`";
 #         echo "head lines: $line";
         local taillines=$((`wc -l "$1"|cut -d' ' -f1`-$line));
@@ -47,7 +55,7 @@ install_rules() {
 #         echo 'done';
       }
       cp "$1" "$1.rukbi.bak"
-      local tmp="/tmp/`basename $1`"
+      local tmp="$(mktemp rukbi.XXXX)"
       grep -viE '(rukbi|birman)' "$1" > "$tmp"
       patch_section "$tmp" layout
       patch_section "$tmp" variant
@@ -55,10 +63,39 @@ install_rules() {
     }
 
     patch_xml() {
-        cp $1 $1.rukbi.bak
+        cp "$1" "$1.rukbi.bak"
+        local SRC="$(mktemp rukbi.XXXX)"
+        local DEST="$(mktemp rukbi.XXXX)"
+        local PART="$(mktemp rukbi.XXXX)"
+        cat "$1">"$SRC"
+ 
+        while true; do
+          local RUKBI_LINE=$(grep -nm1 'rukbi_' "$SRC" | cut -d':' -f1);
+          [[ -n "$RUKBI_LINE" ]] ||
+          {
+            cat "$SRC" >> "$DEST"
+            break
+          }
+          local TAG_OPENING_LINE=$(head -n $(($RUKBI_LINE-1)) "$SRC" | grep -n '<layout>' "$SRC" | tail -n1 | cut -d':' -f1);
+
+          local SRC_LENGTH=$(wc "$SRC");
+
+          set -x
+          local TAG_CLOSING_LINE=$(tail -n $(($SRC_LENGTH-$RUKBI_LINE)) | grep -nm1 '</layout>' "$SRC" | cut -d':' -f1);
+          set +x
+
+          head -n $(($TAG_OPENING_LINE-1)) >> "$DEST"
+          tail -n $(($SRC_LENGTH-$TAG_CLOSING_LINE)) > "$PART"
+          local SWAP="$PART"; PART="$SRC"; SRC="$SWAP"
+        done
+
         #TODO remove existing Rukbi entries from the xml
         #TODO patch xml
-        echo "TODO patch xml"
+#         echo "TODO patch xml"
+        rm -f "$SRC"
+        rm -f "$PART"
+#         mv "$DEST" "$1"
+        echo "See the processed file «${DEST}»"
     }
 
     for list in $xkb_directory/rules/*.lst; do
