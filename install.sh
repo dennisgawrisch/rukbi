@@ -5,14 +5,14 @@ is_xkb_directory() {
 }
 
 find_xkb_directory() {
-    for directory in "$PWD/usr" "/usr/share/X11/xkb" "/etc/X11/xkb"; do
-        echo -n "Testing directory «$directory»… " >&2;
-        if is_xkb_directory $directory; then
-            echo $directory
-            echo 'yes' >&2
+#     for directory in "$PWD/usr" "/usr/share/X11/xkb" "/etc/X11/xkb"; do
+    echo -n "Determining target directory... " >&2
+    for directory in "/usr/share/X11/xkb" "/etc/X11/xkb"; do
+        if is_xkb_directory "$directory"; then
+            echo "$directory"
+            echo "$directory" >&2
             return
         fi
-        echo 'no' >&2
     done
 
     local locate_query='/*/xkb/symbols'
@@ -28,7 +28,12 @@ find_xkb_directory() {
 
 install_symbols() {
     for layout in symbols/*; do
-        cp $layout $xkb_directory/symbols/
+        cp $layout $xkb_directory/symbols/ ||
+        {
+            echo Failed to install the layout description.
+            [[ "$UID" == 0 ]] || echo -e "\nYou should run the installation as \`sudo $0\`".
+            exit 1
+        }
     done
 }
 
@@ -76,26 +81,25 @@ install_rules() {
             cat "$SRC" >> "$DEST"
             break
           }
-          local TAG_OPENING_LINE=$(head -n $(($RUKBI_LINE-1)) "$SRC" | grep -n '<layout>' "$SRC" | tail -n1 | cut -d':' -f1);
+          local TAG_OPENING_LINE=$(head -n $(($RUKBI_LINE-1)) "$SRC" | grep -n '<layout>' | tail -n1 | cut -d':' -f1);
 
-          local SRC_LENGTH=$(wc "$SRC");
+          local SRC_LENGTH=$(wc -l "$SRC"|cut -d' ' -f1);
 
-          set -x
-          local TAG_CLOSING_LINE=$(tail -n $(($SRC_LENGTH-$RUKBI_LINE)) | grep -nm1 '</layout>' "$SRC" | cut -d':' -f1);
-          set +x
+          local TAG_CLOSING_LINE=$(tail -n $(($SRC_LENGTH-$RUKBI_LINE)) "$SRC"| grep -nm1 '</layout>' | cut -d':' -f1);
 
-          head -n $(($TAG_OPENING_LINE-1)) >> "$DEST"
-          tail -n $(($SRC_LENGTH-$TAG_CLOSING_LINE)) > "$PART"
+          head -n $(($TAG_OPENING_LINE-1)) "$SRC" >> "$DEST"
+          tail -n $(($SRC_LENGTH-$TAG_CLOSING_LINE-$RUKBI_LINE)) "$SRC" > "$PART"
           local SWAP="$PART"; PART="$SRC"; SRC="$SWAP"
         done
-
-        #TODO remove existing Rukbi entries from the xml
-        #TODO patch xml
-#         echo "TODO patch xml"
+        local TAG_OPENING_LINE=$(grep -nm1 '<layoutList>' "$DEST" | cut -d':' -f1)
+        head -n $TAG_OPENING_LINE "$DEST" > "$PART"
+        local TAIL=$(($(wc -l "$DEST"|cut -d' ' -f1)-$TAG_OPENING_LINE))
+        cat rules/patch-layout.xml >> "$PART"
+        tail -n $TAIL "$DEST" >> "$PART"
+        mv "$PART" "$DEST"
         rm -f "$SRC"
         rm -f "$PART"
-#         mv "$DEST" "$1"
-        echo "See the processed file «${DEST}»"
+        mv "$DEST" "$1"
     }
 
     for list in $xkb_directory/rules/*.lst; do
@@ -130,5 +134,8 @@ else
     fi
 fi
 
+echo -n "Installing layouts... "
 install_symbols
+echo -n ". "
 install_rules
+echo "done"
