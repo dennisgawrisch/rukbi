@@ -194,14 +194,14 @@
     <model>
       <configItem>
         <name>btc9019u</name>
-	<description>BTC 9019U</description>
+    <description>BTC 9019U</description>
         <vendor>BTC</vendor>
       </configItem>
     </model>
     <model>
       <configItem>
         <name>btc9116u</name>
-	<description>BTC 9116U Mini Wireless Internet and Gaming</description>
+    <description>BTC 9116U Mini Wireless Internet and Gaming</description>
       </configItem>
     </model>
     <model>
@@ -841,21 +841,21 @@
     </model>
     <model>
       <configItem>
-        <name>microsoftmult</name> 
+        <name>microsoftmult</name>
         <description>Microsoft Wireless Multimedia Keyboard 1.0A</description>
         <vendor>Microsoft Inc.</vendor>
       </configItem>
     </model>
     <model>
       <configItem>
-        <name>microsoftelite</name> 
+        <name>microsoftelite</name>
         <description>Microsoft Natural Keyboard Elite</description>
         <vendor>Microsoft Inc.</vendor>
       </configItem>
     </model>
     <model>
       <configItem>
-        <name>microsoftccurve2k</name> 
+        <name>microsoftccurve2k</name>
         <description>Microsoft Comfort Curve Keyboard 2000</description>
         <vendor>Microsoft Inc.</vendor>
       </configItem>
@@ -899,84 +899,84 @@
       <configItem>
         <name>sk1300</name>
         <description>SK-1300</description>
-	<vendor>NEC</vendor>
+    <vendor>NEC</vendor>
       </configItem>
     </model>
     <model>
       <configItem>
         <name>sk2500</name>
         <description>SK-2500</description>
-	<vendor>NEC</vendor>
+    <vendor>NEC</vendor>
       </configItem>
     </model>
     <model>
       <configItem>
         <name>sk6200</name>
         <description>SK-6200</description>
-	<vendor>NEC</vendor>
+    <vendor>NEC</vendor>
       </configItem>
     </model>
     <model>
       <configItem>
         <name>sk7100</name>
         <description>SK-7100</description>
-	<vendor>NEC</vendor>
+    <vendor>NEC</vendor>
       </configItem>
     </model>
     <model>
       <configItem>
         <name>sp_inet</name>
         <description>Super Power Multimedia Keyboard</description>
-	<vendor>Generic</vendor>
+    <vendor>Generic</vendor>
       </configItem>
     </model>
     <model>
       <configItem>
         <name>sven</name>
         <description>SVEN Ergonomic 2500</description>
-	<vendor>SVEN</vendor>
+    <vendor>SVEN</vendor>
       </configItem>
     </model>
     <model>
       <configItem>
         <name>sven303</name>
         <description>SVEN Slim 303</description>
-	<vendor>SVEN</vendor>
+    <vendor>SVEN</vendor>
       </configItem>
     </model>
     <model>
       <configItem>
         <name>symplon</name>
         <description>Symplon PaceBook (tablet PC)</description>
-	<vendor>Symplon</vendor>
+    <vendor>Symplon</vendor>
       </configItem>
     </model>
     <model>
       <configItem>
         <name>toshiba_s3000</name>
         <description>Toshiba Satellite S3000</description>
-	<vendor>Toshiba</vendor>
+    <vendor>Toshiba</vendor>
       </configItem>
     </model>
     <model>
       <configItem>
         <name>trust</name>
         <description>Trust Wireless Keyboard Classic</description>
-	<vendor>Trust</vendor>
+    <vendor>Trust</vendor>
       </configItem>
     </model>
     <model>
       <configItem>
         <name>trustda</name>
         <description>Trust Direct Access Keyboard</description>
-	<vendor>Trust</vendor>
+    <vendor>Trust</vendor>
       </configItem>
     </model>
     <model>
       <configItem>
         <name>trust_slimline</name>
         <description>Trust Slimline</description>
-	<vendor>Trust</vendor>
+    <vendor>Trust</vendor>
       </configItem>
     </model>
     <model>
@@ -1018,161 +1018,161 @@
       <configItem>
         <name>yahoo</name>
         <description>Yahoo! Internet Keyboard</description>
-	<vendor>Yahoo!</vendor>
+    <vendor>Yahoo!</vendor>
       </configItem>
     </model>
     <model>
       <configItem>
         <name>macbook78</name>
         <description>MacBook/MacBook Pro</description>
-	<vendor>Apple</vendor>
+    <vendor>Apple</vendor>
       </configItem>
     </model>
     <model>
       <configItem>
         <name>macbook79</name>
         <description>MacBook/MacBook Pro (Intl)</description>
-	<vendor>Apple</vendor>
+    <vendor>Apple</vendor>
       </configItem>
     </model>
     <model>
       <configItem>
         <name>macintosh</name>
         <description>Macintosh</description>
-	<vendor>Apple</vendor>
+    <vendor>Apple</vendor>
       </configItem>
     </model>
     <model>
       <configItem>
         <name>macintosh_old</name>
         <description>Macintosh Old</description>
-	<vendor>Apple</vendor>
+    <vendor>Apple</vendor>
       </configItem>
     </model>
     <model>
       <configItem>
         <name>macintosh_hhk</name>
         <description>Happy Hacking Keyboard for Mac</description>
-	<vendor>Fujitsu</vendor>
+    <vendor>Fujitsu</vendor>
       </configItem>
     </model>
     <model>
       <configItem>
         <name>acer_c300</name>
         <description>Acer C300</description>
-	<vendor>Acer</vendor>
+    <vendor>Acer</vendor>
       </configItem>
     </model>
     <model>
       <configItem>
         <name>acer_ferrari4k</name>
         <description>Acer Ferrari 4000</description>
-	<vendor>Acer</vendor>
+    <vendor>Acer</vendor>
       </configItem>
     </model>
     <model>
       <configItem>
         <name>acer_laptop</name>
         <description>Acer Laptop</description>
-	<vendor>Acer</vendor>
+    <vendor>Acer</vendor>
       </configItem>
     </model>
     <model>
       <configItem>
         <name>asus_laptop</name>
         <description>Asus Laptop</description>
-	<vendor>Asus</vendor>
+    <vendor>Asus</vendor>
       </configItem>
     </model>
     <model>
       <configItem>
         <name>apple</name>
         <description>Apple</description>
-	<vendor>Apple</vendor>
+    <vendor>Apple</vendor>
       </configItem>
     </model>
     <model>
       <configItem>
         <name>apple_laptop</name>
         <description>Apple Laptop</description>
-	<vendor>Apple</vendor>
+    <vendor>Apple</vendor>
       </configItem>
     </model>
     <model>
       <configItem>
         <name>applealu_ansi</name>
         <description>Apple Aluminium Keyboard (ANSI)</description>
-	<vendor>Apple</vendor>
+    <vendor>Apple</vendor>
       </configItem>
     </model>
     <model>
       <configItem>
         <name>applealu_iso</name>
         <description>Apple Aluminium Keyboard (ISO)</description>
-	<vendor>Apple</vendor>
+    <vendor>Apple</vendor>
       </configItem>
     </model>
     <model>
       <configItem>
         <name>applealu_jis</name>
         <description>Apple Aluminium Keyboard (JIS)</description>
-	<vendor>Apple</vendor>
+    <vendor>Apple</vendor>
       </configItem>
     </model>
     <model>
       <configItem>
         <name>silvercrest</name>
         <description>SILVERCREST Multimedia Wireless Keyboard</description>
-	<vendor>Silvercrest</vendor>
+    <vendor>Silvercrest</vendor>
       </configItem>
     </model>
     <model>
       <configItem>
         <name>emachines</name>
         <description>Laptop/notebook eMachines m68xx</description>
-	<vendor>eMachines</vendor>
+    <vendor>eMachines</vendor>
       </configItem>
     </model>
     <model>
       <configItem>
-	<name>benqx</name>
-	<description>BenQ X-Touch</description>
-	<vendor>BenQ</vendor>
+    <name>benqx</name>
+    <description>BenQ X-Touch</description>
+    <vendor>BenQ</vendor>
       </configItem>
     </model>
     <model>
       <configItem>
-	<name>benqx730</name>
-	<description>BenQ X-Touch 730</description>
-	<vendor>BenQ</vendor>
+    <name>benqx730</name>
+    <description>BenQ X-Touch 730</description>
+    <vendor>BenQ</vendor>
       </configItem>
     </model>
     <model>
       <configItem>
-	<name>benqx800</name>
-	<description>BenQ X-Touch 800</description>
-	<vendor>BenQ</vendor>
+    <name>benqx800</name>
+    <description>BenQ X-Touch 800</description>
+    <vendor>BenQ</vendor>
       </configItem>
     </model>
     <model>
       <configItem>
-	<name>hhk</name>
-	<description>Happy Hacking Keyboard</description>
-	<vendor>Fujitsu</vendor>
+    <name>hhk</name>
+    <description>Happy Hacking Keyboard</description>
+    <vendor>Fujitsu</vendor>
       </configItem>
     </model>
     <model>
       <configItem>
-	<name>classmate</name>
-	<description>Classmate PC</description>
-	<vendor>Intel</vendor>
+    <name>classmate</name>
+    <description>Classmate PC</description>
+    <vendor>Intel</vendor>
       </configItem>
     </model>
     <model>
       <configItem>
-	<name>olpc</name>
-	<description>OLPC</description>
-	<vendor>OLPC</vendor>
+    <name>olpc</name>
+    <description>OLPC</description>
+    <vendor>OLPC</vendor>
       </configItem>
     </model>
     <model>
@@ -1245,7 +1245,7 @@
             <description>Alternative international</description>
           </configItem>
         </variant>
-	<variant>
+    <variant>
           <configItem>
             <name>colemak</name>
             <description>Colemak</description>
@@ -1372,7 +1372,7 @@
           <configItem>
             <name>olpc-fa</name>
             <description>OLPC Dari</description>
-            
+
           </configItem>
         </variant>
         <variant>
@@ -1692,7 +1692,7 @@
             <languageList><iso639Id>mal</iso639Id></languageList>
          </configItem>
         </variant>
-	<variant>
+    <variant>
           <configItem>
             <name>mal_lalitha</name>
             <description>Malayalam Lalitha</description>
@@ -1999,7 +1999,7 @@
           <configItem>
             <name>shs</name>
             <description>Secwepemctsin</description>
-            
+
           </configItem>
         </variant>
         <variant>
@@ -2110,18 +2110,18 @@
             <description>qwerty, extended Backslash</description>
           </configItem>
         </variant>
-	<variant>
-	  <configItem>
-	    <name>ucw</name>
-	    <description>UCW layout (accented letters only)</description>
-	 </configItem>
-	</variant>
-	<variant>
-	  <configItem>
-	    <name>dvorak-ucw</name>
-	    <description>US Dvorak with CZ UCW support</description>
-	 </configItem>
-	</variant>
+    <variant>
+      <configItem>
+        <name>ucw</name>
+        <description>UCW layout (accented letters only)</description>
+     </configItem>
+    </variant>
+    <variant>
+      <configItem>
+        <name>dvorak-ucw</name>
+        <description>US Dvorak with CZ UCW support</description>
+     </configItem>
+    </variant>
       </variantList>
     </layout>
     <layout>
@@ -2732,7 +2732,7 @@
           </configItem>
         </variant>
 
-        
+
         <variant>
           <configItem>
             <name>101_qwertz_comma_dead</name>
@@ -2783,7 +2783,7 @@
         </variant>
 
 
-        
+
         <variant>
           <configItem>
             <name>102_qwertz_comma_dead</name>
@@ -2945,12 +2945,12 @@
             <description>Kana</description>
           </configItem>
         </variant>
-	<variant>
+    <variant>
           <configItem>
             <name>OADG109A</name>
             <description>OADG 109A</description>
           </configItem>
-	</variant>
+    </variant>
         <variant>
           <configItem>
             <name>mac</name>
@@ -2992,22 +2992,22 @@
         <languageList><iso639Id>kaz</iso639Id></languageList>
       </configItem>
       <variantList>
-	<variant>
-	  <configItem>
-	    <name>ruskaz</name>
-	    <description>Russian with Kazakh</description>
+    <variant>
+      <configItem>
+        <name>ruskaz</name>
+        <description>Russian with Kazakh</description>
             <languageList><iso639Id>kaz</iso639Id>
                           <iso639Id>rus</iso639Id></languageList>
-	  </configItem>
-	</variant>
-	<variant>
-	  <configItem>
-	    <name>kazrus</name>
-	    <description>Kazakh with Russian</description>
+      </configItem>
+    </variant>
+    <variant>
+      <configItem>
+        <name>kazrus</name>
+        <description>Kazakh with Russian</description>
             <languageList><iso639Id>kaz</iso639Id>
                           <iso639Id>rus</iso639Id></languageList>
-	  </configItem>
-	</variant>
+      </configItem>
+    </variant>
       </variantList>
     </layout>
     <layout>
@@ -3550,7 +3550,7 @@
             <languageList><iso639Id>kom</iso639Id></languageList>
           </configItem>
         </variant>
-	<variant>
+    <variant>
           <configItem>
             <name>sah</name>
             <description>Yakut</description>
@@ -4095,7 +4095,7 @@
             <description>Standard RSTU on Russian layout</description>
           </configItem>
         </variant>
-	<variant>
+    <variant>
           <configItem>
             <name>homophonic</name>
             <description>Homophonic</description>
@@ -4230,12 +4230,12 @@
         <languageList><iso639Id>kor</iso639Id></languageList>
       </configItem>
       <variantList>
-	<variant>
-	  <configItem>
-	    <name>kr104</name>
-	    <description>101/104 key Compatible</description>
-	  </configItem>
-	</variant>
+    <variant>
+      <configItem>
+        <name>kr104</name>
+        <description>101/104 key Compatible</description>
+      </configItem>
+    </variant>
       </variantList>
     </layout>
     <layout>
@@ -4273,14 +4273,14 @@
           <configItem>
             <name>ogam</name>
             <description>Ogham</description>
-            
+
          </configItem>
         </variant>
         <variant>
           <configItem>
             <name>ogam_is434</name>
             <description>Ogham IS434</description>
-            
+
           </configItem>
         </variant>
       </variantList>
@@ -4344,7 +4344,7 @@
       <configItem>
         <name>epo</name>
         <shortDescription>Epo</shortDescription>
-	<description>Esperanto</description>
+    <description>Esperanto</description>
         <languageList><iso639Id>epo</iso639Id></languageList>
       </configItem>
       <variantList>
@@ -4360,7 +4360,7 @@
       <configItem>
         <name>np</name>
         <shortDescription>Npl</shortDescription>
-	<description>Nepal</description>
+    <description>Nepal</description>
         <languageList><iso639Id>nep</iso639Id></languageList>
       </configItem>
     </layout>
@@ -4368,7 +4368,7 @@
       <configItem>
         <name>ng</name>
         <shortDescription>Nga</shortDescription>
-	<description>Nigeria</description>
+    <description>Nigeria</description>
         <languageList><iso639Id>eng</iso639Id></languageList>
       </configItem>
       <variantList>
@@ -4482,7 +4482,7 @@
       <configItem>
         <name>tz</name>
         <shortDescription>Tza</shortDescription>
-	<description>Tanzania</description>
+    <description>Tanzania</description>
         <languageList><iso639Id>swa</iso639Id></languageList>
       </configItem>
     </layout>
@@ -4490,7 +4490,7 @@
       <configItem>
         <name>ke</name>
         <shortDescription>Ken</shortDescription>
-	<description>Kenya</description>
+    <description>Kenya</description>
         <languageList><iso639Id>swa</iso639Id></languageList>
       </configItem>
       <variantList>
@@ -4507,14 +4507,14 @@
       <configItem>
         <name>bw</name>
         <shortDescription>Bwa</shortDescription>
-	<description>Botswana</description>
+    <description>Botswana</description>
         <languageList><iso639Id>tsn</iso639Id></languageList>
       </configItem>
     </layout>
   </layoutList>
   <optionList>
     <group allowMultipleSelection="true">
-      
+
       <configItem>
         <name>grp</name>
         <description>Key(s) to change layout</description>
@@ -4644,7 +4644,7 @@
           <name>grp:rctrl_rshift_toggle</name>
           <description>Right Ctrl+Right Shift</description>
         </configItem>
-      </option>      
+      </option>
       <option>
         <configItem>
           <name>grp:ctrl_alt_toggle</name>
@@ -4713,7 +4713,7 @@
       </option>
     </group>
     <group allowMultipleSelection="true">
-      
+
       <configItem>
         <name>lv3</name>
         <description>Key to choose 3rd level</description>
@@ -4799,7 +4799,7 @@
       <option>
         <configItem>
           <name>lv3:lsgt_switch</name>
-	  <description>&lt;Less/Greater&gt;</description>
+      <description>&lt;Less/Greater&gt;</description>
         </configItem>
       </option>
       <option>
@@ -4817,12 +4817,12 @@
       <option>
         <configItem>
           <name>lv3:lsgt_switch_latch</name>
-	  <description>&lt;Less/Greater&gt; (chooses 3rd level, latches when pressed together with another 3rd-level-chooser)</description>
+      <description>&lt;Less/Greater&gt; (chooses 3rd level, latches when pressed together with another 3rd-level-chooser)</description>
         </configItem>
       </option>
     </group>
     <group allowMultipleSelection="true">
-      
+
       <configItem>
         <name>ctrl</name>
         <description>Ctrl key position</description>
@@ -4865,7 +4865,7 @@
       </option>
     </group>
     <group allowMultipleSelection="true">
-      
+
       <configItem>
         <name>grp_led</name>
         <description>Use keyboard LED to show alternative layout</description>
@@ -4890,7 +4890,7 @@
       </option>
     </group>
     <group allowMultipleSelection="false">
-      
+
       <configItem>
         <name>keypad</name>
         <description>Numeric keypad layout selection</description>
@@ -4944,16 +4944,16 @@
        </configItem>
       </option>
     </group>
-    
+
     <group allowMultipleSelection="false">
-      
+
       <configItem>
         <name>kpdl</name>
         <description>Numeric keypad delete key behaviour</description>
       </configItem>
       <option>
         <configItem>
-          
+
           <name>kpdl:dot</name>
           <description>Legacy key with dot</description>
        </configItem>
@@ -4961,7 +4961,7 @@
       <option>
         <configItem>
           <name>kpdl:comma</name>
-          
+
           <description>Legacy key with comma</description>
        </configItem>
       </option>
@@ -4992,7 +4992,7 @@
       <option>
         <configItem>
           <name>kpdl:kposs</name>
-          
+
           <description>Four-level key with abstract separators</description>
        </configItem>
       </option>
@@ -5004,7 +5004,7 @@
       </option>
     </group>
     <group allowMultipleSelection="false">
-      
+
       <configItem>
         <name>caps</name>
         <description>Caps Lock key behavior</description>
@@ -5089,7 +5089,7 @@
       </option>
     </group>
     <group allowMultipleSelection="false">
-      
+
       <configItem>
         <name>altwin</name>
         <description>Alt/Win key behavior</description>
@@ -5150,7 +5150,7 @@
       </option>
     </group>
     <group allowMultipleSelection="true">
-      
+
       <configItem>
         <name>Compose key</name>
         <description>Compose key position</description>
@@ -5295,7 +5295,7 @@
       </option>
     </group>
     <group allowMultipleSelection="true">
-      
+
       <configItem>
         <name>eurosign</name>
         <description>Adding EuroSign to certain keys</description>
@@ -5333,7 +5333,7 @@
       <option>
         <configItem>
           <name>lv5:lsgt_switch_lock</name>
-	  <description>&lt;Less/Greater&gt; chooses 5th level, locks when pressed together with another 5th-level-chooser</description>
+      <description>&lt;Less/Greater&gt; chooses 5th level, locks when pressed together with another 5th-level-chooser</description>
         </configItem>
       </option>
       <option>
@@ -5357,7 +5357,7 @@
       <option>
         <configItem>
           <name>lv5:lsgt_switch_lock_cancel</name>
-	  <description>&lt;Less/Greater&gt; chooses 5th level, locks when pressed together with another 5th-level-chooser, one press releases the lock</description>
+      <description>&lt;Less/Greater&gt; chooses 5th level, locks when pressed together with another 5th-level-chooser, one press releases the lock</description>
         </configItem>
       </option>
       <option>
@@ -5381,7 +5381,7 @@
       <option>
         <configItem>
           <name>lv5:lsgt_switch_lock_cancel</name>
-	  <description>&lt;Less/Greater&gt; chooses 5th level and activates level5-Lock when pressed together with another 5th-level-chooser, one press releases the lock</description>
+      <description>&lt;Less/Greater&gt; chooses 5th level and activates level5-Lock when pressed together with another 5th-level-chooser, one press releases the lock</description>
         </configItem>
       </option>
       <option>
@@ -5392,7 +5392,7 @@
       </option>
     </group>
     <group allowMultipleSelection="false">
-      
+
       <configItem>
         <name>nbsp</name>
         <description>Using space key to input non-breakable space character</description>
