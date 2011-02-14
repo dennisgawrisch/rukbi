@@ -1,8 +1,9 @@
 #!/bin/bash
-cd `dirname $0`
-for test_case in `ls -1 cases`; do
+script_directory=`dirname $0`
+
+for test_case in `ls -1 $script_directory/cases`; do
     echo "Test case: $test_case"
-    tar xaf cases/$test_case/source.*
-    ../install.sh -d xkb
-#    rm -r xkb
+    tar xaf $script_directory/cases/$test_case/source.*
+    $script_directory/../install.sh -d xkb
+    rm -r xkb
 done

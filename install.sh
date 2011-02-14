@@ -1,15 +1,14 @@
 #!/bin/bash
+script_directory=`dirname $0`
 
 is_xkb_directory() {
     [[ -d "$1/rules" && -d "$1/symbols" ]]
 }
 
 find_xkb_directory() {
-    echo -n "Determining target directory... " >&2
     for directory in "/usr/share/X11/xkb" "/etc/X11/xkb"; do
         if is_xkb_directory "$directory"; then
-            echo "$directory"
-            echo "$directory" >&2
+            echo $directory
             return
         fi
     done
@@ -26,12 +25,11 @@ find_xkb_directory() {
 }
 
 install_symbols() {
-    for layout in symbols/*; do
+    for layout in $script_directory/symbols/*; do
         cp $layout $xkb_directory/symbols/ ||
         {
-            echo Failed to install the layout description.
-            [[ "$UID" == 0 ]] || echo -e "\nYou should run the installation as \`sudo $0\`".
-            exit 1
+            echo Failed to copy $layout
+            exit 10
         }
     done
 }
@@ -51,7 +49,7 @@ install_rules() {
             local line=${NUMBERS[0]};
             local taillines=$((`wc -l "$1"|cut -d' ' -f1`-$line));
             head -n$line "$1" > "$1.fixed"
-            cat "rules/patch-$2.lst" >> "$1.fixed"
+            cat "$script_directory/rules/patch-$2.lst" >> "$1.fixed"
             tail -n$taillines "$1" >> "$1.fixed"
             mv "$1.fixed" "$1"
         }
@@ -90,7 +88,7 @@ install_rules() {
         local TAG_OPENING_LINE=$(grep -nm1 '<layoutList>' "$DEST" | cut -d':' -f1)
         head -n $TAG_OPENING_LINE "$DEST" > "$PART"
         local TAIL=$(($(wc -l "$DEST"|cut -d' ' -f1)-$TAG_OPENING_LINE))
-        cat rules/patch-layout.xml >> "$PART"
+        cat $script_directory/rules/patch-layout.xml >> "$PART"
         tail -n $TAIL "$DEST" >> "$PART"
         mv "$PART" "$DEST"
         rm -f "$SRC"
@@ -99,11 +97,13 @@ install_rules() {
     }
 
     for list in $xkb_directory/rules/*.lst; do
+        echo Patch $list
         patch_list $list
     done
 
     for xml in $xkb_directory/rules/*.xml; do
         if [[ -z `echo $xml | grep extras` ]]; then
+            echo Patch $xml
             patch_xml $xml
         fi
     done
@@ -130,8 +130,8 @@ else
     fi
 fi
 
-echo -n "Installing layouts... "
+echo Installing symbols
 install_symbols
-echo -n ". "
+echo Patching rules
 install_rules
-echo "done"
+echo Done
