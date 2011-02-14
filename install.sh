@@ -5,7 +5,6 @@ is_xkb_directory() {
 }
 
 find_xkb_directory() {
-#     for directory in "$PWD/usr" "/usr/share/X11/xkb" "/etc/X11/xkb"; do
     echo -n "Determining target directory... " >&2
     for directory in "/usr/share/X11/xkb" "/etc/X11/xkb"; do
         if is_xkb_directory "$directory"; then
@@ -38,33 +37,31 @@ install_symbols() {
 }
 
 install_rules() {
-#   get_line_numbers pattern filename
-# pattern is an extended regexp.
-# returns numbers array of available lines looking like the pattern,
-# returns "", if no suitable lines were found.
-  get_line_numbers(){
-    echo `egrep -n "$1" "$2"|cut -d':' -f1`
-  }
+    # get_line_numbers pattern filename
+    # pattern is an extended regexp.
+    # returns numbers array of available lines looking like the pattern,
+    # returns "", if no suitable lines were found.
+    get_line_numbers(){
+        echo `egrep -n "$1" "$2"|cut -d':' -f1`
+    }
+
     patch_list() {
-      patch_section(){
-#         echo -n "Adding a section «$2» to a file «$1»... "
-        local NUMBERS=($(get_line_numbers "! $2" "$1"))
-        local line=${NUMBERS[0]};
-#         echo "total lines count: `wc -l "$1"|cut -d' ' -f1`";
-#         echo "head lines: $line";
-        local taillines=$((`wc -l "$1"|cut -d' ' -f1`-$line));
-        head -n$line "$1" > "$1.fixed"
-        cat "rules/patch-$2.lst" >> "$1.fixed"
-        tail -n$taillines "$1" >> "$1.fixed"
-        mv "$1.fixed" "$1"
-#         echo 'done';
-      }
-      cp "$1" "$1.rukbi.bak"
-      local tmp="$(mktemp rukbi.XXXX)"
-      grep -viE '(rukbi|birman)' "$1" > "$tmp"
-      patch_section "$tmp" layout
-      patch_section "$tmp" variant
-      mv "$tmp" "$1"
+        patch_section() {
+            local NUMBERS=($(get_line_numbers "! $2" "$1"))
+            local line=${NUMBERS[0]};
+            local taillines=$((`wc -l "$1"|cut -d' ' -f1`-$line));
+            head -n$line "$1" > "$1.fixed"
+            cat "rules/patch-$2.lst" >> "$1.fixed"
+            tail -n$taillines "$1" >> "$1.fixed"
+            mv "$1.fixed" "$1"
+        }
+
+        cp "$1" "$1.rukbi.bak"
+        local tmp="$(mktemp rukbi.XXXX)"
+        grep -viE '(rukbi|birman)' "$1" > "$tmp"
+        patch_section "$tmp" layout
+        patch_section "$tmp" variant
+        mv "$tmp" "$1"
     }
 
     patch_xml() {
@@ -73,24 +70,23 @@ install_rules() {
         local DEST="$(mktemp rukbi.XXXX)"
         local PART="$(mktemp rukbi.XXXX)"
         cat "$1">"$SRC"
- 
+
         while true; do
-          local RUKBI_LINE=$(grep -nm1 'rukbi_' "$SRC" | cut -d':' -f1);
-          [[ -n "$RUKBI_LINE" ]] ||
-          {
-            cat "$SRC" >> "$DEST"
-            break
-          }
-          local TAG_OPENING_LINE=$(head -n $(($RUKBI_LINE-1)) "$SRC" | grep -n '<layout>' | tail -n1 | cut -d':' -f1);
+            local RUKBI_LINE=$(grep -nm1 'rukbi_' "$SRC" | cut -d':' -f1);
+            [[ -n "$RUKBI_LINE" ]] ||
+            {
+                cat "$SRC" >> "$DEST"
+                break
+            }
+            local TAG_OPENING_LINE=$(head -n $(($RUKBI_LINE-1)) "$SRC" | grep -n '<layout>' | tail -n1 | cut -d':' -f1);
+            local SRC_LENGTH=$(wc -l "$SRC"|cut -d' ' -f1);
+            local TAG_CLOSING_LINE=$(tail -n $(($SRC_LENGTH-$RUKBI_LINE)) "$SRC"| grep -nm1 '</layout>' | cut -d':' -f1);
 
-          local SRC_LENGTH=$(wc -l "$SRC"|cut -d' ' -f1);
-
-          local TAG_CLOSING_LINE=$(tail -n $(($SRC_LENGTH-$RUKBI_LINE)) "$SRC"| grep -nm1 '</layout>' | cut -d':' -f1);
-
-          head -n $(($TAG_OPENING_LINE-1)) "$SRC" >> "$DEST"
-          tail -n $(($SRC_LENGTH-$TAG_CLOSING_LINE-$RUKBI_LINE)) "$SRC" > "$PART"
-          local SWAP="$PART"; PART="$SRC"; SRC="$SWAP"
+            head -n $(($TAG_OPENING_LINE-1)) "$SRC" >> "$DEST"
+            tail -n $(($SRC_LENGTH-$TAG_CLOSING_LINE-$RUKBI_LINE)) "$SRC" > "$PART"
+            local SWAP="$PART"; PART="$SRC"; SRC="$SWAP"
         done
+
         local TAG_OPENING_LINE=$(grep -nm1 '<layoutList>' "$DEST" | cut -d':' -f1)
         head -n $TAG_OPENING_LINE "$DEST" > "$PART"
         local TAIL=$(($(wc -l "$DEST"|cut -d' ' -f1)-$TAG_OPENING_LINE))
