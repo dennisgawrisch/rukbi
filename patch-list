@@ -1,0 +1,30 @@
+#!/usr/bin/env python3
+import sys
+import re
+
+with open(sys.argv[2]) as file:
+    patch_layout = file.readlines()
+    file.close()
+
+with open(sys.argv[3]) as file:
+    patch_variant = file.readlines()
+    file.close()
+
+with open(sys.argv[1]) as file:
+    source = file.readlines()
+    file.close()
+
+result = []
+
+for line in source:
+    if not re.search('rukbi', line):
+        result.append(line)
+
+    if re.search('! layout', line):
+        result.extend(patch_layout)
+    elif re.search('! variant', line):
+        result.extend(patch_variant)
+
+with open(sys.argv[1], 'w') as file:
+    file.writelines(result)
+    file.close()
