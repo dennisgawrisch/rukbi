@@ -5,7 +5,7 @@ for test_case in `ls -1 $script_directory/cases`; do
     echo "Test case: $test_case"
 
     cp -r "$script_directory/cases/$test_case/source" "$script_directory/cases/$test_case/actual-result"
-    $script_directory/../install.sh -d "$script_directory/cases/$test_case/actual-result"
+    $script_directory/../install/install -d "$script_directory/cases/$test_case/actual-result"
 
     echo "Comparing files"
     current_directory=$PWD
