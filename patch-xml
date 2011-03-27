@@ -1,0 +1,40 @@
+#!/usr/bin/env python3
+import sys
+import re
+
+with open(sys.argv[2]) as file:
+    patch = file.readlines()
+    file.close()
+
+with open(sys.argv[1]) as file:
+    source = file.readlines()
+    file.close()
+
+i = 0
+for line in source:
+    if re.search('<layout>', line):
+        index_open = i
+        its_rukbi = False
+
+    if re.search('rukbi', line):
+        its_rukbi = True
+
+    if re.search('</layout>', line):
+        if its_rukbi:
+            for j in range(index_open, i + 1):
+                source[j] = "rukbi"
+
+    i = i + 1
+
+result = []
+
+for line in source:
+    if not re.search('rukbi', line):
+        result.append(line)
+
+    if re.search('<layoutList>', line):
+        result.extend(patch)
+
+with open(sys.argv[1], 'w') as file:
+    file.writelines(result)
+    file.close()
