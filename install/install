@@ -25,7 +25,7 @@ find_xkb_directory() {
 }
 
 install_symbols() {
-    for layout in $script_directory/symbols/*; do
+    for layout in $script_directory/../symbols/*; do
         cp $layout $xkb_directory/symbols/ ||
         {
             echo Failed to copy $layout
@@ -37,13 +37,13 @@ install_symbols() {
 install_rules() {
     for list in $xkb_directory/rules/*.lst; do
         echo Patch $list
-        $script_directory/patch-list $list $script_directory/rules/patch-layout.lst $script_directory/rules/patch-variant.lst
+        $script_directory/patch-list $list $script_directory/../rules/patch-layout.lst $script_directory/../rules/patch-variant.lst
     done
 
     for xml in $xkb_directory/rules/*.xml; do
         if [[ -z `echo $xml | grep extras` ]]; then
             echo Patch $xml
-            $script_directory/patch-xml $xml $script_directory/rules/patch-layout.xml
+            $script_directory/patch-xml $xml $script_directory/../rules/patch-layout.xml
         fi
     done
 }
