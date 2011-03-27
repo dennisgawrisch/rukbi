@@ -1,0 +1,29 @@
+# Maintainer: Denys Popov <besisland@besisland.name>
+pkgname=rukbi
+pkgver=3.1
+pkgrel=1
+pkgdesc="Alternative Ukrainian and Russian keyboard layouts with miscellaneous useful typographic characters, including Ilya Birman’s layout"
+url="http://besisland.name/rukbi"
+arch=("any")
+license=("GPLv3")
+depends=("xkeyboard-config" "python")
+source=("http://rukbi.googlecode.com/files/rukbi-3.1.tar.bz2")
+md5sums=("7d28c75020ebbea0780313a38e8b61cd")
+sha256sums=("f96a50934c108d5bd798e43fa5f7e7696cb379d176bd8b40446653b9dbceea40")
+install=("arch-install")
+
+check() {
+    cd "$srcdir"
+    test/test
+}
+
+package() {
+    local xkbdir="$pkgdir/usr/share/X11/xkb"
+    cd "$srcdir"
+    install -d $xkbdir/symbols $xkbdir/rules
+    install -d $pkgdir/opt/rukbi/install $pkgdir/opt/rukbi/symbols $pkgdir/opt/rukbi/rules
+    install -m 0644 symbols/* $xkbdir/symbols/
+    install -m 0755 install/* $pkgdir/opt/rukbi/install/
+    install -m 0644 symbols/* $pkgdir/opt/rukbi/symbols/
+    install -m 0644 rules/* $pkgdir/opt/rukbi/rules/
+}
