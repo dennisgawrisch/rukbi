@@ -8,8 +8,9 @@ arch=("any")
 license=("GPLv3")
 depends=("xkeyboard-config" "python")
 source=("http://rukbi.googlecode.com/files/rukbi-3.1.tar.bz2")
-md5sums=("7d28c75020ebbea0780313a38e8b61cd")
-sha256sums=("f96a50934c108d5bd798e43fa5f7e7696cb379d176bd8b40446653b9dbceea40")
+md5sums=("45562c0d2b8097dca0af01d817b54548")
+sha1sums=("d664d1f52538ba18c9505e49f9a0715078df9308")
+sha256sums=("3fa60bdee7f905b0485f83b91f564e7ab97f49ebf9d6fb978da78b117feeebd7")
 install=("arch-install")
 
 check() {
