@@ -1,7 +1,7 @@
 partial default alphanumeric_keys
 xkb_symbols "rukbi" {
     name[Group1]="Rukbi (Russian with Ukrainian letters)";
-    key <TLDE> {[   U0451   ,   U0401   ,   U03E7   ,   U03E6   ]};
+    key <TLDE> {[   U0451   ,   U0401   ,   U04A9   ,   U04A8   ]};
     key <AE01> {[   U0031   ,   U0021   ,   U00B9   ,   U203D   ]};
     key <AE02> {[   U0032   ,   U0022   ,   U00B2   ,   U00BD   ]};
     key <AE03> {[   U0033   ,   U2116   ,   U00B3   ,   U2153   ]};
