@@ -1,7 +1,7 @@
 partial default alphanumeric_keys
 xkb_symbols "birman" {
     name[Group1]="Ukrainian after Ilya Birman’s layout";
-    key <TLDE> {[   U03E7   ,   U03E6   ,   U00B4   ,   U0300   ]};
+    key <TLDE> {[   U04A9   ,   U04A8   ,   U00B4   ,   U0300   ]};
     key <AE01> {[   U0031   ,   U0021   ,   U00B9   ,   U00B9   ]};
     key <AE02> {[   U0032   ,   U0022   ,   U00B2   ,   U00BD   ]};
     key <AE03> {[   U0033   ,   U2116   ,   U00B3   ,   U2153   ]};
