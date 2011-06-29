@@ -1,6 +1,6 @@
 # Maintainer: Denys Popov <besisland@besisland.name>
 pkgname=rukbi
-pkgver=3.2
+pkgver=3.3
 pkgrel=1
 pkgdesc="Alternative Ukrainian and Russian keyboard layouts with miscellaneous useful typographic characters, including Ilya Birman’s layout"
 url="http://besisland.name/rukbi"
