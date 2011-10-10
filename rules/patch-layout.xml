@@ -11,13 +11,13 @@
         <variant>
           <configItem>
             <name>rukbi</name>
-            <description>Rukbi</description>
+            <description>Английская раскладка «Рукби»</description>
           </configItem>
         </variant>
         <variant>
           <configItem>
             <name>birman</name>
-            <description>Ильи Бирмана</description>
+            <description>Английская раскладка Ильи Бирмана</description>
           </configItem>
         </variant>
       </variantList>
@@ -35,7 +35,7 @@
         <variant>
           <configItem>
             <name>rukbi</name>
-            <description>с дополнительными украинскими буквами</description>
+            <description>Русская раскладка «Рукби» с дополнительными украинскими буквами</description>
             <languageList>
               <iso639Id>rus</iso639Id>
               <iso639Id>ukr</iso639Id>
@@ -45,7 +45,7 @@
         <variant>
           <configItem>
             <name>birman</name>
-            <description>Ильи Бирмана</description>
+            <description>Русская раскладка Ильи Бирмана</description>
           </configItem>
         </variant>
       </variantList>
@@ -63,7 +63,7 @@
         <variant>
           <configItem>
             <name>birman</name>
-            <description>по образцу раскладки Ильи Бирмана</description>
+            <description>Украинская раскладка по образцу раскладки Ильи Бирмана</description>
           </configItem>
         </variant>
       </variantList>
