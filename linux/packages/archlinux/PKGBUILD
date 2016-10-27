@@ -13,11 +13,6 @@ sha1sums=('4195f1fd81535897a82f1f5a8aa2a851ccfe72a7')
 sha256sums=('ddcd326976039c4b85424da09c01b5db89188321e9d86831716d077c566ea8b0')
 install=arch-install
 
-check() {
-    cd "$srcdir"
-    install.test/test
-}
-
 package() {
     local xkbdir="$pkgdir/usr/share/X11/xkb"
     cd "$srcdir"
