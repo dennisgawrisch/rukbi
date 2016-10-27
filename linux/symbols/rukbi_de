@@ -3,24 +3,24 @@ xkb_symbols "basic" {
     name[Group1]="Rukbi German";
 
     key <TLDE> {[asciicircum, degree, uparrow, dead_circumflex]};
-    key <AE01> {[1, exclam, onesuperior, NoSymbol]};
+    key <AE01> {[1, exclam, onesuperior]};
     key <AE02> {[2, quotedbl, twosuperior, onehalf]};
     key <AE03> {[3, section, threesuperior, onethird]};
     key <AE04> {[4, dollar, NoSymbol, onequarter]};
-    key <AE05> {[5, percent, U2030, NoSymbol]}; // U+2030 PER MILLE SIGN
+    key <AE05> {[5, percent, U2030]}; // U+2030 PER MILLE SIGN
     key <AE06> {[6, ampersand]};
-    key <AE07> {[7, slash, braceleft, NoSymbol]};
+    key <AE07> {[7, slash, braceleft]};
     key <AE08> {[8, parenleft, bracketleft, leftarrow]};
     key <AE09> {[9, parenright, bracketright, rightarrow]};
     key <AE10> {[0, equal, braceright, notequal]};
     key <AE11> {[ssharp, question, backslash, U1E9E]}; // U+1E9E LATIN CAPITAL LETTER SHARP S
     key <AE12> {[acute, grave, dead_acute, dead_grave]};
 
-    key <AD01> {[q, Q, at, NoSymbol]};
+    key <AD01> {[q, Q, at]};
     key <AD02> {[w, W]};
-    key <AD03> {[e, E, EuroSign, NoSymbol]};
-    key <AD04> {[r, R, registered, NoSymbol]};
-    key <AD05> {[t, T, trademark, NoSymbol]};
+    key <AD03> {[e, E, EuroSign]};
+    key <AD04> {[r, R, registered]};
+    key <AD05> {[t, T, trademark]};
     key <AD06> {[z, Z]};
     key <AD07> {[u, U]};
     key <AD08> {[i, I]};
@@ -29,10 +29,10 @@ xkb_symbols "basic" {
     key <AD11> {[udiaeresis, Udiaeresis]};
     key <AD12> {[plus, asterisk, asciitilde, plusminus]};
 
-    key <AC01> {[a, A, approxeq, NoSymbol]};
+    key <AC01> {[a, A, approxeq]};
     key <AC02> {[s, S]};
     key <AC03> {[d, D]};
-    key <AC04> {[f, F, sterling, NoSymbol]};
+    key <AC04> {[f, F, sterling]};
     key <AC05> {[g, G]};
     key <AC06> {[h, H]};
     key <AC07> {[j, J, doublelowquotemark, singlelowquotemark]};
@@ -40,16 +40,16 @@ xkb_symbols "basic" {
     key <AC09> {[l, L, rightdoublequotemark, rightsinglequotemark]};
     key <AC10> {[odiaeresis, Odiaeresis, ae, AE]};
     key <AC11> {[adiaeresis, Adiaeresis, oe, OE]};
-    key <BKSL> {[numbersign, apostrophe, rightsinglequotemark, NoSymbol]};
+    key <BKSL> {[numbersign, apostrophe, rightsinglequotemark]};
 
     key <LSGT> {[less, greater, bar, brokenbar]};
     key <AB01> {[y, Y]};
     key <AB02> {[x, X, multiply, U22C5]}; // U+22C5 DOT OPERATOR
     key <AB03> {[c, C, copyright, cent]};
-    key <AB04> {[v, V, downarrow, NoSymbol]};
+    key <AB04> {[v, V, downarrow]};
     key <AB05> {[b, B]};
     key <AB06> {[n, N]};
-    key <AB07> {[m, M, U2212, NoSymbol]}; // U+2212 MINUS SIGN
+    key <AB07> {[m, M, U2212]}; // U+2212 MINUS SIGN
     key <AB08> {[comma, semicolon, guillemotright, doublelowquotemark]};
     key <AB09> {[period, colon, guillemotleft, leftdoublequotemark]};
     key <AB10> {[minus, underscore, endash, emdash]};
