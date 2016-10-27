@@ -174,8 +174,9 @@
   creativedw7000  Creative Desktop Wireless 7000
 
 ! layout
-  rukbi_ru        Rukbi Russian
   rukbi_en        Rukbi English
+  rukbi_de        Rukbi German
+  rukbi_ru        Rukbi Russian
   rukbi_uk        Rukbi Ukrainian
   us              USA
   ad              Andorra
@@ -269,11 +270,13 @@
   bw              Botswana
 
 ! variant
-  rukbi           rukbi_en: Rukbi English (Latin)
-  birman          rukbi_en: Ilya Birman’s English
-  rukbi           rukbi_ru: Russian with Ukrainian letters
-  birman          rukbi_ru: Ilya Birman’s Russian
-  birman          rukbi_uk: Ukrainian after Ilya Birman’s layout
+  rukbi           rukbi_en: Rukbi English
+  deu             rukbi_en: Rukbi English + German
+  rukbi           rukbi_de: Rukbi German
+  rukbi           rukbi_ru: Rukbi Russian
+  ukr             rukbi_ru: Rukbi Russian + Ukrainian
+  rukbi           rukbi_uk: Rukbi Ukrainian
+  rus             rukbi_uk: Rukbi Ukrainian + Russian
   chr             us: Cherokee
   euro            us: With EuroSign on 5
   intl            us: International (with dead keys)
