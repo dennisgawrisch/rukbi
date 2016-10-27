@@ -1,7 +1,7 @@
 # Maintainer: Denys Popov <denys@denyspopov.biz>
 pkgname=rukbi
-pkgver=3.5
-pkgrel=3
+pkgver=4.0
+pkgrel=1
 pkgdesc="Alternative Ukrainian and Russian keyboard layouts with miscellaneous useful typographic characters, including Ilya Birman’s layout"
 url="http://besisland.name/rukbi"
 arch=("any")
@@ -15,7 +15,7 @@ install=arch-install
 
 check() {
     cd "$srcdir"
-    test/test
+    install.test/test
 }
 
 package() {
