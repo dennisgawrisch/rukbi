@@ -10,12 +10,6 @@
       <variantList>
         <variant>
           <configItem>
-            <name>rukbi</name>
-            <description>Rukbi English</description>
-          </configItem>
-        </variant>
-        <variant>
-          <configItem>
             <name>deu</name>
             <description>Rukbi English + Deutsch</description>
             <shortDescription>Enß</shortDescription>
@@ -36,14 +30,7 @@
           <iso639Id>deu</iso639Id>
         </languageList>
       </configItem>
-      <variantList>
-        <variant>
-          <configItem>
-            <name>rukbi</name>
-            <description>Rukbi Deutsch</description>
-          </configItem>
-        </variant>
-      </variantList>
+      <variantList/>
     </layout>
     <layout>
       <configItem>
@@ -56,10 +43,6 @@
       </configItem>
       <variantList>
         <variant>
-          <configItem>
-            <name>rukbi</name>
-            <description>Русская раскладка «Рукби»</description>
-          </configItem>
           <configItem>
             <name>ukr</name>
             <description>Русская раскладка «Рукби» с украинскими буквами</description>
@@ -83,10 +66,6 @@
       </configItem>
       <variantList>
         <variant>
-          <configItem>
-            <name>rukbi</name>
-            <description>Українська розкладка «Рукбі»</description>
-          </configItem>
           <configItem>
             <name>rus</name>
             <description>Українська розкладка «Рукбі» з російськими літерами</description>

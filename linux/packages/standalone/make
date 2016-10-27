@@ -1,5 +1,5 @@
 #!/bin/bash
 cd `dirname $0`/../..
 cp ../README ./
-tar cjf rukbi-X.X.tar.bz2 symbols rules install install.test README LICENSE INSTALL
+tar cjf rukbi-X.X.tar.bz2 symbols rules install README LICENSE INSTALL
 rm ./README
