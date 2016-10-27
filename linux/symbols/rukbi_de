@@ -1,5 +1,5 @@
 partial default alphanumeric_keys
-xkb_symbols "rukbi" {
+xkb_symbols "basic" {
     name[Group1]="Rukbi German";
 
     key <TLDE> {[asciicircum, degree, uparrow, dead_circumflex]};
@@ -12,7 +12,7 @@ xkb_symbols "rukbi" {
     key <AE07> {[7, slash, braceleft, NoSymbol]};
     key <AE08> {[8, parenleft, bracketleft, leftarrow]};
     key <AE09> {[9, parenright, bracketright, rightarrow]};
-    key <AE10> {[0, equal, braceright, approxeq]};
+    key <AE10> {[0, equal, braceright, notequal]};
     key <AE11> {[ssharp, question, backslash, U1E9E]}; // U+1E9E LATIN CAPITAL LETTER SHARP S
     key <AE12> {[acute, grave, dead_acute, dead_grave]};
 
@@ -21,13 +21,13 @@ xkb_symbols "rukbi" {
     key <AD03> {[e, E, EuroSign, NoSymbol]};
     key <AD04> {[r, R, registered, NoSymbol]};
     key <AD05> {[t, T, trademark, NoSymbol]};
-    key <AD06> {[z, z]};
+    key <AD06> {[z, Z]};
     key <AD07> {[u, U]};
     key <AD08> {[i, I]};
     key <AD09> {[o, O]};
     key <AD10> {[p, P]};
     key <AD11> {[udiaeresis, Udiaeresis]};
-    key <AD12> {[plus, asterisk, asciitilde, dead_tilde]};
+    key <AD12> {[plus, asterisk, asciitilde, plusminus]};
 
     key <AC01> {[a, A, approxeq, NoSymbol]};
     key <AC02> {[s, S]};

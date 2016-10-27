@@ -5,19 +5,19 @@ pkgrel=1
 pkgdesc="Alternative keyboard layouts with miscellaneous useful typographic characters"
 url="http://besisland.name/rukbi"
 arch=("any")
-license=("GPLv3")
+license=("GPL3")
 depends=("xkeyboard-config" "python")
 source=("https://bitbucket.org/denyspopov/rukbi/downloads/$pkgname-$pkgver.tar.bz2")
-md5sums=('58741c7318f99d8157675c454eff213c')
-sha1sums=('4195f1fd81535897a82f1f5a8aa2a851ccfe72a7')
-sha256sums=('ddcd326976039c4b85424da09c01b5db89188321e9d86831716d077c566ea8b0')
+md5sums=('d9dc00797655d5c9179c5a334b907d80')
+sha1sums=('43bacd455973c5c1ff20fc70414ef10718ebfd87')
+sha256sums=('c33f1c82bd94fdaebe2ee833aa2f7c3007518a06c90052e351517d36445fb76a')
 install=arch-install
 
 package() {
     local xkbdir="$pkgdir/usr/share/X11/xkb"
     cd "$srcdir"
 
-    install -d $xkbdir/symbols $xkbdir/rules
+    install -d $xkbdir/symbols
     install -m 0644 symbols/* $xkbdir/symbols/
 
     install -d $xkbdir/rukbi/install $xkbdir/rukbi/symbols $xkbdir/rukbi/rules
