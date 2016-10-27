@@ -2,7 +2,7 @@
 pkgname=rukbi
 pkgver=4.0
 pkgrel=1
-pkgdesc="Alternative Ukrainian and Russian keyboard layouts with miscellaneous useful typographic characters, including Ilya Birman’s layout"
+pkgdesc="Alternative keyboard layouts with miscellaneous useful typographic characters"
 url="http://besisland.name/rukbi"
 arch=("any")
 license=("GPLv3")
