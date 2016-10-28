@@ -49,7 +49,7 @@ xkb_symbols "basic" {
     key <AB04> {[Cyrillic_em, Cyrillic_EM, downarrow]};
     key <AB05> {[Cyrillic_i, Cyrillic_I]};
     key <AB06> {[Cyrillic_te, Cyrillic_TE]};
-    key <AB07> {[Cyrillic_softsign, Cyrillic_SOFTSIGN, U2212]}; // U+2212 MINUS SIGN
+    key <AB07> {[Cyrillic_softsign, Cyrillic_SOFTSIGN, U2212, MillSign]}; // U+2212 MINUS SIGN
     key <AB08> {[Cyrillic_be, Cyrillic_BE, guillemotleft, doublelowquotemark]};
     key <AB09> {[Cyrillic_yu, Cyrillic_YU, guillemotright, leftdoublequotemark]};
     key <AB10> {[period, comma, ellipsis]};
