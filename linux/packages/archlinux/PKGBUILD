@@ -8,9 +8,9 @@ arch=("any")
 license=("GPL3")
 depends=("xkeyboard-config" "python")
 source=("https://bitbucket.org/denyspopov/rukbi/downloads/$pkgname-$pkgver.tar.bz2")
-md5sums=('f2f259068f540b92c17a78a7c65aba57')
-sha1sums=('6e0160a67085dfaee89adfc4927bb00130ca5f6e')
-sha256sums=('7f325526f404a9488d15651b118c585f98edbe32547971822e217802f6e3326c')
+md5sums=('0aa98a3726bccc85068c23694a0bddc4')
+sha1sums=('23a3cd199f33c90f050f219f86fd2a016b6b77bd')
+sha256sums=('0408284d758691d0dd87f42ec7fd69f01e53dfc73483a570260633131a6e7743')
 install=arch-install
 
 package() {
