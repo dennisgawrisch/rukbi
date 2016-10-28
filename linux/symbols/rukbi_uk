@@ -42,7 +42,7 @@ xkb_symbols "basic" {
     key <AC10> {[Cyrillic_zhe, Cyrillic_ZHE, leftsinglequotemark]};
     key <AC11> {[Ukrainian_ie, Ukrainian_IE, rightsinglequotemark]};
 
-    key <LSGT> {[slash, bar]};
+    key <LSGT> {[Ukrainian_ghe_with_upturn, Ukrainian_GHE_WITH_UPTURN]};
     key <AB01> {[Cyrillic_ya, Cyrillic_YA]};
     key <AB02> {[Cyrillic_che, Cyrillic_CHE, multiply, U22C5]}; // U+22C5 DOT OPERATOR
     key <AB03> {[Cyrillic_es, Cyrillic_ES, copyright, cent]};
