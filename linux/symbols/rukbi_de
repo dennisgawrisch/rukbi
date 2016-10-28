@@ -49,7 +49,7 @@ xkb_symbols "basic" {
     key <AB04> {[v, V, downarrow]};
     key <AB05> {[b, B]};
     key <AB06> {[n, N]};
-    key <AB07> {[m, M, U2212, U00B5]}; // U+2212 MINUS SIGN, U+00B5 MICRO SIGN
+    key <AB07> {[m, M, U2212, mu]}; // U+2212 MINUS SIGN
     key <AB08> {[comma, semicolon, guillemotright, doublelowquotemark]};
     key <AB09> {[period, colon, guillemotleft, leftdoublequotemark]};
     key <AB10> {[minus, underscore, endash, emdash]};
