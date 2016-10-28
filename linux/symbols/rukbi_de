@@ -7,7 +7,7 @@ xkb_symbols "basic" {
     key <AE02> {[2, quotedbl, twosuperior, onehalf]};
     key <AE03> {[3, section, threesuperior, onethird]};
     key <AE04> {[4, dollar, NoSymbol, onequarter]};
-    key <AE05> {[5, percent, U2030]}; // U+2030 PER MILLE SIGN
+    key <AE05> {[5, percent, permille]};
     key <AE06> {[6, ampersand]};
     key <AE07> {[7, slash, braceleft]};
     key <AE08> {[8, parenleft, bracketleft, leftarrow]};
