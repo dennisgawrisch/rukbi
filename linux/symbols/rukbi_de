@@ -55,4 +55,7 @@ xkb_symbols "basic" {
     key <AB10> {[minus, underscore, endash, emdash]};
 
     key <SPCE> {[space, space, nobreakspace, nobreakspace]};
+
+    include "kpdl(comma)"
+    include "level3(ralt_switch)"
 };

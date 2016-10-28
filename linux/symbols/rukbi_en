@@ -54,6 +54,9 @@ xkb_symbols "basic" {
     key <AB10> {[slash, question, ellipsis]};
 
     key <SPCE> {[space, space, nobreakspace, nobreakspace]};
+
+    include "kpdl(dot)"
+    include "level3(ralt_switch)"
 };
 
 partial alphanumeric_keys
