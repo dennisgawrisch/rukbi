@@ -15,7 +15,7 @@ xkb_symbols "basic" {
     key <AE10> {[0, parenright, rightarrow]};
     key <AE11> {[minus, underscore, emdash, endash]};
     key <AE12> {[equal, plus, notequal, plusminus]};
-    key <BKSL> {[backslash, slash]};
+    key <BKSL> {[backslash, slash, bar]};
 
     key <AD01> {[Cyrillic_shorti, Cyrillic_SHORTI]};
     key <AD02> {[Cyrillic_tse, Cyrillic_TSE]};
