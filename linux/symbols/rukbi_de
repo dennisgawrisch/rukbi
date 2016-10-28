@@ -38,8 +38,8 @@ xkb_symbols "basic" {
     key <AC07> {[j, J, doublelowquotemark, singlelowquotemark]};
     key <AC08> {[k, K, leftdoublequotemark, leftsinglequotemark]};
     key <AC09> {[l, L, rightdoublequotemark, rightsinglequotemark]};
-    key <AC10> {[odiaeresis, Odiaeresis, ae, AE]};
-    key <AC11> {[adiaeresis, Adiaeresis, oe, OE]};
+    key <AC10> {[odiaeresis, Odiaeresis, oe, OE]};
+    key <AC11> {[adiaeresis, Adiaeresis, ae, AE]};
     key <BKSL> {[numbersign, apostrophe, rightsinglequotemark]};
 
     key <LSGT> {[less, greater, bar, brokenbar]};
