@@ -5,7 +5,7 @@ cd `dirname $0`/../..
 cp ../README.md ./
 cp ../LICENSE ./
 
-tar cjf rukbi-X.X.tar.bz2 symbols rules install README.md LICENSE INSTALL
+tar cjf rukbi-X.X.tar.bz2 symbols rules install README.md LICENSE INSTALL.md
 
 rm ./README.md
 rm ./LICENSE
