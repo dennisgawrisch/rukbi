@@ -1,6 +1,6 @@
 #!/bin/bash
 # change to "linux" directory
-cd `dirname $0`/../..
+cd `dirname $0`/..
 
 cp ../README.md ./
 cp ../LICENSE ./
